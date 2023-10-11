@@ -5,7 +5,7 @@
 ## My Bio
 Hi, I'm Yulius, Software Quality Assurance
 
-<img src="assets/mypic.jpg" alt="drawing" style="width:300px;"/>
+<img src="assets/mypic.jpg" alt="yulius" style="width:300px;"/>
 
 i'm Software Quality Assurance, with more than 3 years experience who also a founder of Tech Startup in Bandung,
  
