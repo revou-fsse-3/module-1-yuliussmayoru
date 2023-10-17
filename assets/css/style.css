@@ -1,10 +1,146 @@
+@import "background-svg.css";
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+#Hero,
+#tech-stack,
+#our-clients,
+#career-opportunity,
+#footer-section {
+    padding: 100px;
+}
+
+
+/* Apply Flexbox to the nav element */
+#dimyTopnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Style for the logo */
 #dimy-logo {
+    width: 200px; /* Set your desired width */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Add spacing between the logo and menu */
+}
+
+/* Style for the navbar menu */
+.navbarMenu {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbarMenu a {
+    text-decoration: none;
+    color: black; /* Add your desired text color */
+    margin: 0 10px; /* Add spacing between menu items */
+}
+
+/* Style for the active link */
+.navbarMenu a.active {
+    font-weight: bold; /* You can customize the active link styles */
+}
+
+/* style for Hero section */
+
+#Hero {
+    display: flex;
+    align-items: center; /* Vertically center content */
+    justify-content: space-around; /* Horizontally distribute content */
+}
+
+#program-img {
+    width: 75%; /* Adjust the width as needed */
+    max-width: 500px; /* Set a maximum width if necessary */
+
+}
+
+#ask-us-form {
+    /* flex: 1; Take up the remaining space */
+    padding: 100px;
+    border-radius: 5%;
+    background-color: #fff;
+}
+
+#ask-us-form h3 {
+    font-size: 24px; /* Customize the heading size */
+    margin-bottom: 10px;
+}
+
+#ask-us-form label {
+    font-weight: bold; /* Make labels bold or style them as needed */
+}
+
+#ask-us-form input[type="text"],
+#ask-us-form input[type="ftextbox"],
+#ask-us-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc; /* Customize border styles */
+    border-radius: 5px;
+}
+
+#ask-us-form input[type="submit"] {
+    background-color: #007bff; /* Customize the submit button background color */
+    color: #fff; /* Customize the text color */
+    cursor: pointer;
+}
+
+/* Tech Stack Section */
+
+#tech-stack {
+}
+
+#section-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#tech-logos {
+    display: flex;
+    justify-content: space-around;
+}
+#lang-logo {
     width: 200px;
-    height: auto;
+}
+
+/* Section Our Clients */
+
+#client-picture-lists {
+    display: flex;
+    justify-content: space-around;
+}
+
+#client-pic {
+    width: 30%;
+}
+
+/* Join Us! section */
+
+#career-opportunity {
+}
+
+#career-table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table {
+    padding: 50px;
+}
+
+td,th {
+    border: 1px solid black;
 }
