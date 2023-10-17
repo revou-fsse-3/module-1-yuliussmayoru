@@ -14,7 +14,7 @@
                 <a href="#tech-stack" class="Tech">Tech</a>
                 <a href="#our-clients" class="ourClient">Our Client</a>
                 <a href="#career-opportunity" class="carrerOpportunity">Career</a>
-                <a href="#admin-login" class="adminLogin">Admin Login</a>
+                <button type="button" id="adminLogin">Admin Login</button>
             </div>
         </nav>
     </header>
@@ -22,20 +22,22 @@
         <section id="Hero" class="hero-banner">
             <img src="assets/logo6-07.png" alt="program logo" class="program-img">
             <div class="ask-us-form">
-                <h3 class="contact-us-title">Contact Us!</h3>
-                <label for="fname" class="label-name">Your name:</label>
-                <input type="text" id="fname" name="fname" placeholder="name" class="input-form">
-                <label for="femail" class="label-name">E-mail:</label>
-                <input type="text" id="femail" name="femail" placeholder="email" class="input-form">
-                <label for="fdropdown" class="label-name">Gender</label>
-                <select id="dropdown-gender" class="input-form">
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                    <option value="apache">AH-64 Apache</option>
-                </select>
-                <label for="ftextbox" class="label-name">Message:</label>
-                <input type="ftextbox" id="ftextbox" name="ftextbox" placeholder="Write something!" class="input-form">
-                <input type="submit" id="formsubmit" value="Kirim" class="input-form">
+                <form id="contact-form">
+                    <h3 class="contact-us-title">Contact Us!</h3>
+                    <label for="fname" class="label-name">Your name:</label>
+                    <input type="text" id="fname" name="fname" placeholder="name" class="input-form">
+                    <label for="femail" class="label-name">E-mail:</label>
+                    <input type="text" id="femail" name="femail" placeholder="email" class="input-form">
+                    <label for="fdropdown" class="label-name">Gender</label>
+                    <select id="dropdown-gender" class="input-form">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="apache">AH-64 Apache</option>
+                    </select>
+                    <label for="ftextbox" class="label-name">Message:</label>
+                    <input type="ftextbox" id="ftextbox" name="ftextbox" placeholder="Write something!" class="input-form">
+                    <input type="submit" id="formsubmit" value="Kirim" class="input-form">
+                </form>
             </div>
         </section>
         <section class="tech-stack">
@@ -111,9 +113,11 @@
     <footer>
         <div class="footer-section white-text">
             <h3 id="footer-title">where can you find us?</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15842.4406758838!2d107.6378218!3d-6.9371072!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e97f9613b259%3A0x60b36fbf005d6450!2sPT%20Dimy%20Teknologi%20Indonesia!5e0!3m2!1sen!2sid!4v1697541083955!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>Address : Jl. Capricorn No.27A, Gumuruh, Kec. Batununggal, Kota Bandung, Jawa Barat 40275</p>
+            <p>Phone number: +6285222803000</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15842.4406758838!2d107.6378218!3d-6.9371072!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e97f9613b259%3A0x60b36fbf005d6450!2sPT%20Dimy%20Teknologi%20Indonesia!5e0!3m2!1sen!2sid!4v1697541083955!5m2!1sen!2sid" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </footer>
-    <script src=""></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
