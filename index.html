@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src=""></script>
     <title>Dimy Teknologi Indonesia</title>
 </head>
 <body>
     <header>
         <nav class="topnav" id="dimyTopnav">
-            <img src="assets/Dimy%20New%20Logo%202021%20Landscape-10.png" alt="Dimy Logo" id="dimy-logo">
+            <img src="assets/Dimy%20New%20Logo%202021%20Landscape-10.png" alt="Dimy Logo" class="dimy-logo">
             <div class="navbarMenu">
                 <a href="#Home" class="active">Home</a>
                 <a href="#tech-stack" class="Tech">Tech</a>
@@ -20,58 +19,65 @@
         </nav>
     </header>
     <main>
-        <section id="Hero">
-            <img src="assets/logo6-07.png" alt="program logo" id="program-img">
-            <div id="ask-us-form">
-                <h3>Contact Us!</h3>
-                <label for="fname">Your name:</label><br>
-                <input type="text" id="fname" name="fname" placeholder="name"><br>
-                <label for="femail">E-mail:</label><br>
-                <input type="text" id="femail" name="femail" placeholder="email"><br>
-                <label for="ftextbox">Message:</label><br>
-                <input type="ftextbox" id="ftextbox" name="ftextbox" placeholder="Write something!"><br>
-                <input type="submit" id="formsubmit" value="Kirim">
+        <section id="Hero" class="hero-banner">
+            <img src="assets/logo6-07.png" alt="program logo" class="program-img">
+            <div class="ask-us-form">
+                <h3 class="contact-us-title">Contact Us!</h3>
+                <label for="fname" class="label-name">Your name:</label>
+                <input type="text" id="fname" name="fname" placeholder="name" class="input-form">
+                <label for="femail" class="label-name">E-mail:</label>
+                <input type="text" id="femail" name="femail" placeholder="email" class="input-form">
+                <label for="fdropdown" class="label-name">Gender</label>
+                <select id="dropdown-gender" class="input-form">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="apache">AH-64 Apache</option>
+                </select>
+                <label for="ftextbox" class="label-name">Message:</label>
+                <input type="ftextbox" id="ftextbox" name="ftextbox" placeholder="Write something!" class="input-form">
+                <input type="submit" id="formsubmit" value="Kirim" class="input-form">
             </div>
         </section>
-        <section id="tech-stack">
-            <div id="section-title">
+        <section class="tech-stack">
+            <div class="section-title">
                 <h3 id="tech-stack-title">Our Tech Stack!</h3><br>
-                <p id="tech-stack-info">during our time developing our product and projects,
-                we used various tech as our tools to create precise website so below is the list of tech we used in Dimy</p>
+                <p id="tech-stack-info">Below is the list of tech we used in Dimy!</p>
             </div>
-            <div id="tech-logos">
-                <img src="assets/php.png" alt="php" id="lang-logo">
-                <img src="assets/python.png" alt="pyhton" id="lang-logo">
-                <img src="assets/java-script.png" alt="javascript" id="lang-logo">
-                <img src="assets/physics.png" alt="react" id="lang-logo">
-                <img src="assets/web.png" alt="asp" id="lang-logo">
+            <div class="tech-logos">
+                <img src="assets/php.png" alt="php" class="lang-logo">
+                <img src="assets/python.png" alt="pyhton" class="lang-logo">
+                <img src="assets/java-script.png" alt="javascript" class="lang-logo">
+                <img src="assets/physics.png" alt="react" class="lang-logo">
+                <img src="assets/web.png" alt="asp" class="lang-logo">
             </div>
         </section>
-        <section id="our-clients">
-            <div id="section-title">
+        <section class="our-clients">
+            <div class="section-title white-text">
                 <h3 id="our-clients-title">Our Clients!</h3>
                 <p>here is some list of our clients!</p>
             </div>
-            <div id="client-picture-lists">
-                <img src="assets/jayadi.png" alt="jayadi" id="client-pic">
-                <img src="assets/pertiwi.png" alt="pertiwi" id="client-pic">
-                <img src="assets/pos.png" alt="pos" id="client-pic">
+            <div class="client-picture-lists">
+                <img src="assets/jayadi.png" alt="jayadi" class="client-pic">
+                <img src="assets/pertiwi.png" alt="pertiwi" class="client-pic">
+                <img src="assets/pos.png" alt="pos" class="client-pic">
             </div>
         </section>
-        <section id="career-opportunity">
-            <div id="section-title">
+        <section class="career-opportunity">
+            <div class="section-title">
                 <h3 id="carrer-opportunity-title">Join Us!</h3>
                 <p>currently we are looking for talent to join us!</p>
             </div>
-            <div id="career-table">
-                <table>
+            <div class="career-table">
+                <table class="minimalistBlack">
                     <tbody>
-                        <tr>
-                            <th>No</th>
-                            <th>Job</th>
-                            <th>Description</th>
-                            <th>Requirement</th>
-                        </tr>
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Job</th>
+                                <th>Description</th>
+                                <th>Requirement</th>
+                            </tr>
+                        </thead>
                         <tr>
                             <td>1</td>
                             <td>Laravel + React Programmer</td>
@@ -98,16 +104,16 @@
                         </tr>
                     </tbody>
                 </table>
-                <p>if you think you are, fulfill the requirements, you may contact us at : dimy.teknologi@gmail.com</p>
+                <p class="background-white">if you think you are, fulfill the requirements, you may contact us at : dimy.teknologi@gmail.com</p>
             </div>            
         </section>
     </main>
     <footer>
-        <div id="footer-section">
+        <div class="footer-section white-text">
             <h3 id="footer-title">where can you find us?</h3>
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15842.4406758838!2d107.6378218!3d-6.9371072!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e97f9613b259%3A0x60b36fbf005d6450!2sPT%20Dimy%20Teknologi%20Indonesia!5e0!3m2!1sen!2sid!4v1697541083955!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </footer>
-
+    <script src=""></script>
 </body>
 </html>

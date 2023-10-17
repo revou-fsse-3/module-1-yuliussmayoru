@@ -1,8 +1,15 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/bwEfZG3u)
 
-# Yulius Mayoru Profile
+# About Projects
+
+### Dimy Landing page
+#### Project Description
+> created to complete revou module 1 checkpoint 2 assignment, the page functioned as landing page of the company, as a preview about what has been achieved by the company, to help customer reach out the company to help them to create a tech product, and also to inform people with talent about job apportunity to join the team.
+
+
+#### Author's Profile
 > assignment for week 0 Introduction "My Profile" 
-## My Bio
+##### My Bio
 Hi, I'm Yulius, Software Quality Assurance
 
 <img src="assets/mypic.jpg" alt="yulius" style="width:300px;"/>
@@ -11,13 +18,13 @@ i'm Software Quality Assurance, with more than 3 years experience who also a fou
  
 My main focus is Testing, Start from Regression Testing, Black Box Testing, Automation Testing API testing and UAT. but since i also a founder of tech startup, sometimes i have multiple role such as Project Manager, or Customer Satisfaction
  
-## My Links
+##### My Links
 
 - Instagram : [_athanasios.92](https://www.instagram.com/_athanasios92/)
 - Linkedin : [Yulius Mayoru](https://www.linkedin.com/in/yulius-mayoru-a2491a20b/)
 - Github : [yuliussmayoru](https://github.com/yuliussmayoru)
 
-## Product & Project Experience
+##### Product & Project Experience
 
 below is 3 example of project i have been working in recent years. 
 
@@ -29,9 +36,9 @@ below is 3 example of project i have been working in recent years.
 
 and many more.
 
-## My Code Examples
+##### My Code Examples
 
-### javascript with cypress.io & cucumber (automation framework)
+##### javascript with cypress.io & cucumber (automation framework)
 
 > this is my first time getting my hands on automation testing.
 > the code below is to create automation for login and logout.
@@ -180,7 +187,7 @@ describe('User try to login Kokarmina Point of Sales in Condition Cashier has no
 })
 
 ```
-### Selenium Java with Cucumber
+#### Selenium Java with Cucumber
 
 > this is the code when i using selenium java to conduct automations test
 
