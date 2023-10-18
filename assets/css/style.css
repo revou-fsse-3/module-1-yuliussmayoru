@@ -23,6 +23,17 @@
     padding: 10px;
 }
 
+/* styling admin login button */
+
+#adminLogin {
+    background-color: #fff;
+    border: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
 /* Style for the logo */
 .dimy-logo {
     width: 200px; /* Set your desired width */
