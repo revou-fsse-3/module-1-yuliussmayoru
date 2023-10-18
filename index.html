@@ -22,7 +22,7 @@
         <section id="Hero" class="hero-banner">
             <img src="assets/logo6-07.png" alt="program logo" class="program-img">
             <div class="ask-us-form">
-                <form id="contact-form">
+                <<form id="contact-form" onsubmit="return validateForm()">
                     <h3 class="contact-us-title">Contact Us!</h3>
                     <label for="fname" class="label-name">Your name:</label>
                     <input type="text" id="fname" name="fname" placeholder="name" class="input-form">
@@ -30,12 +30,13 @@
                     <input type="text" id="femail" name="femail" placeholder="email" class="input-form">
                     <label for="fdropdown" class="label-name">Gender</label>
                     <select id="dropdown-gender" class="input-form">
+                        <option value="">Select</option>
                         <option value="male">Male</option>
                         <option value="female">Female</option>
                         <option value="apache">AH-64 Apache</option>
                     </select>
                     <label for="ftextbox" class="label-name">Message:</label>
-                    <input type="ftextbox" id="ftextbox" name="ftextbox" placeholder="Write something!" class="input-form">
+                    <textarea id="ftextbox" name="ftextbox" placeholder="Write something!" class="input-form"></textarea>
                     <input type="submit" id="formsubmit" value="Kirim" class="input-form">
                 </form>
             </div>
