@@ -1,4 +1,4 @@
-function validateForm() {
+const validateForm = ()=> {
 
     // getting valie from each form
     let name = document.getElementById("fname").value; // input name
