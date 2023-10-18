@@ -1,10 +1,14 @@
 function validateForm() {
-    var name = document.getElementById("fname").value;
-    var email = document.getElementById("femail").value;
-    var gender = document.getElementById("dropdown-gender").value;
-    var message = document.getElementById("ftextbox").value;
+
+    // getting valie from each form
+    var name = document.getElementById("fname").value; // input name
+    var email = document.getElementById("femail").value; // input email
+    var gender = document.getElementById("dropdown-gender").value; // select gender
+    var message = document.getElementById("ftextbox").value; // input message
 
     // Simple validation, check if fields are not empty
+    // the code read :
+    // if name, email, gender, and message value equal to empty ("") return false and show alert all fields must be filled out
     if (name === "" || email === "" || gender === "" || message === "") {
         alert("All fields must be filled out");
         return false; // Prevent form submission
@@ -12,6 +16,8 @@ function validateForm() {
 
     // Regular expression to validate email format
     var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    // the code read "
+    // if email doesn't match (!) with email pattern,return false and show alert please enter a valid email address
     if (!email.match(emailPattern)) {
         alert("Please enter a valid email address");
         return false; // Prevent form submission
