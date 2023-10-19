@@ -4,7 +4,9 @@
 
 ### Dimy Landing page
 
-Click Here to access the project : [Revou Module 1 Checkpoint 2 Dimy Landing Page](https://yuliussmayorurevou.netlify.app/)
+Click Here to access the project : 
+- Netlify : [Revou Module 1 Checkpoint 2 Dimy Landing Page](https://yuliussmayorurevou.netlify.app/)
+- Github Pages : [Revou Module 1 Checkpoint 2 Dimy Landing Page](https://revou-fsse-3.github.io/module-1-yuliussmayoru/)
 
 #### Project Description
 > created to complete revou module 1 checkpoint 2 assignment, the page functioned as landing page of the company, as a preview about what has been achieved by the company, to help customer reach out the company to help them to create a tech product, and also to inform people with talent about job apportunity to join the team.
