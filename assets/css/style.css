@@ -50,7 +50,7 @@ p {
 
 nav ul {
     display: flex;
-    flex-direction: row-reverse;
+    justify-content: flex-end;
 }
 
 nav ul li {
@@ -334,5 +334,24 @@ nav ul li a:hover {
             width: 500px;
         }
 
-        .
+    }
+
+    /* LOGO ANIMATION */
+
+    .program-img {
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        transform-origin: bottom;
+    }
+
+    .bounce-1 {
+        animation-name: bounce-1;
+        animation-timing-function: linear;
+    }
+
+    @keyframes bounce-1 {
+        0%   { transform: translateY(0); }
+        50%  { transform: translateY(-100px); }
+        100% { transform: translateY(0); }
+        
     }
