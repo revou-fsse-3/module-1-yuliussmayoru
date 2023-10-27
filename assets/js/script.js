@@ -27,11 +27,11 @@ const validateForm = ()=> {
     return true; // Allow form submission
 }
 
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
+function showMobileNav() {
+    var x = document.getElementById("mobileNavbar");
+    if (x.style.display === "none" || x.style.display === "") {
+      x.style.display = "block";
     } else {
-      x.className = "topnav";
+      x.style.display = "none";
     }
   }

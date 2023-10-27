@@ -13,16 +13,28 @@
 
 
         <label for="ham_menu" class="ham-menu-bar">
-            <i class="fa fa-bars"></i> <!--- USING THIS CLASS IS MANDATORY --->
+            <button class="hamburger-button-style" onclick="showMobileNav()">
+                <i class="fa fa-bars"></i>
+            </button> <!--- USING THIS CLASS IS MANDATORY --->
         </label>
-
         <input type="checkbox" id="hamMenu" autocomplete="off">
-        <ul>
+        <div class="navbar-menu">
+            <ul>
             <li><a href="#Home" class="home nav-menu">Home</a></li>
             <li><a href="#techStack" class="Tech nav-menu">Tech</a></li>
             <li><a href="#ourClients" class="ourClient nav-menu">Our Client</a></li>
             <li> <a href="#careerOpportunity" class="carrerOpportunity nav-menu">Career</a></li>
         </ul>
+        </div>
+
+        <div class="mobile-navbar-menu" id="mobileNavbar">
+            <ul>
+                <li><a href="#Home" class="home nav-menu">Home</a></li>
+                <li><a href="#techStack" class="Tech nav-menu">Tech</a></li>
+                <li><a href="#ourClients" class="ourClient nav-menu">Our Client</a></li>
+                <li> <a href="#careerOpportunity" class="carrerOpportunity nav-menu">Career</a></li>
+            </ul>
+        </div>
     </nav>
 
     <!--- header -->
@@ -141,6 +153,6 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15842.4406758838!2d107.6378218!3d-6.9371072!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e97f9613b259%3A0x60b36fbf005d6450!2sPT%20Dimy%20Teknologi%20Indonesia!5e0!3m2!1sen!2sid!4v1697541083955!5m2!1sen!2sid" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </footer>
-
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

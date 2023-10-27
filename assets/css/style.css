@@ -82,6 +82,25 @@ nav ul li a:hover {
     font-size: 30px;
 }
 
+.hamburger-button-style {
+    width: 45px;
+    height:45px;
+    border: none;
+    background-color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.hamburger-button-style:hover {
+    color: white;
+    background-color: #0E2A47;
+}
+
+.mobile-navbar-menu {
+    z-index: 11;
+    display: none;
+}
+
 @media only screen and (max-width:960px) {
     .ham-menu-bar {
       display: block;
@@ -90,32 +109,12 @@ nav ul li a:hover {
       transition: .5s all ease;
     }
 
-    nav ul{
-        display: grid;
-        position: fixed;
-        top:70px;
-        height:100vh;
-        background-color:black;
-        width:100%;
-        left:-100%;
-        font-size: 17px;
-        transition: .5s all ease;
-        text-align: center;
-        padding-top:30px;
+    .navbar-menu {
+        display: none;
     }
-    nav ul li a{
-        color:white;
-    }
-    nav ul li a:hover{
-        color:white;
-        background-color: #0E2A47;
-    }
-    #hamMenu:checked~ul{
-        left:0;
-    }
-
-    #hamMenu:checked~.ham_menu_bar i:before{
-        content: "\f00d";
+    
+    .mobile-navbar-menu {
+        background-color: white;
     }
   }
 
