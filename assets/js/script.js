@@ -26,3 +26,12 @@ const validateForm = ()=> {
     alert("Message Sent!");
     return true; // Allow form submission
 }
+
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }

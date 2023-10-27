@@ -1,10 +1,13 @@
 @import "background-svg.css";
-@import "responsive.css";
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background-color: white;
 }
 
 h3 {
@@ -15,101 +18,132 @@ p {
     font-size: 20px;
 }
 
-
 .container {
     display: grid;
-    grid-template-areas: "nav"
+    grid-template-areas:
+    "navbar"
     "header"
     "section-a"
     "section-b"
-    "section-c"
-    "footer";
+    "section-c";
 
-    grid-template-rows: 0.1fr 3fr 3fr 3fr 3fr 2fr;
+    grid-template-rows: 60px 700px 500px 700px 500px;
+  }
 
-}
 
-/* Apply Flexbox to the nav element */
-
+/* Basic styles for your navigation */
 .topnav {
-    grid-template-areas: nav;
+    grid-template-columns: navbar;
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    align-items: center;
+    background-color:white;
+    padding: 10px;
     position: sticky;
     top: 0;
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
 }
 
-.topnav a {
-    display: block;
-    padding: 14px 16px;
-    border-radius: 20%;
-}
-.topnav a:hover {
-    background-color:#0E2A47;
-    color: white;
-}
-
-.topnav button:hover {
-    background-color:#0E2A47;
-    color: white;
-}
-
-/* styling admin login button */
-
-.button-styling {
-    background-color: #fff;
-    border: none;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
-    padding: 14px 16px;
-    cursor: pointer;
-    border-radius: 20%;
-}
-
-/* Style for the logo */
 .dimy-logo {
-    width: 200px; /* Set your desired width */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 10px; /* Add spacing between the logo and menu */
+    width: 200px;
+    transition: .5s all ease;
 }
 
-/* Style for the navbar menu */
-.navbarMenu {
+nav ul {
     display: flex;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+    flex-direction: row-reverse;
 }
 
-.navbarMenu a {
+nav ul li {
+    list-style: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+nav ul li a {
     text-decoration: none;
-    color: black; /* Add your desired text color */
-    margin: 0 10px; /* Add spacing between menu items */
+    padding: 18px;
+    color: black;
+    transition: .5s all ease;
 }
 
-/* Style for the active link */
-.navbarMenu a.active {
-    font-weight: bold; /* You can customize the active link styles */
+nav ul li a:hover {
+    color: white;
+     background-color: #0E2A47;
 }
 
+#hamMenu {
+    display: none;
+}
 
+.ham-menu-bar {
+    display: none;
+    font-size: 30px;
+}
 
-/* style for header section */
+@media only screen and (max-width:960px) {
+    .ham-menu-bar {
+      display: block;
+      z-index: 10;
+      text-align: end;
+      transition: .5s all ease;
+    }
 
-.hero-banner {
+    nav ul{
+        display: grid;
+        position: fixed;
+        top:70px;
+        height:100vh;
+        background-color:black;
+        width:100%;
+        left:-100%;
+        font-size: 17px;
+        transition: .5s all ease;
+        text-align: center;
+        padding-top:30px;
+    }
+    nav ul li a{
+        color:white;
+    }
+    nav ul li a:hover{
+        color:white;
+        background-color: #0E2A47;
+    }
+    #hamMenu:checked~ul{
+        left:0;
+    }
+
+    #hamMenu:checked~.ham_menu_bar i:before{
+        content: "\f00d";
+    }
+  }
+
+  /* BAGIAN HEADER */
+
+  .hero-banner {
     grid-template-areas: header;
-    display: flex;
-    align-items: center; /* Vertically center content */
-    justify-content: space-around; /* Horizontally distribute content */
-}
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+  }
 
-.program-img {
-    width: 75%; /* Adjust the width as needed */
+  .dimytech-header-logo {
+    display: grid;
+    justify-self: center;
+    align-self: center;
+
+  }
+
+  .program-img {
+    width: 500px; /* Adjust the width as needed */
     max-width: 500px; /* Set a maximum width if necessary */
 
+}
+
+.ask-us-form {
+    display: grid;
+    justify-self: center;
+    align-self: center;
 }
 
 .contact-form {
@@ -143,108 +177,162 @@ p {
     cursor: pointer;
 }
 
+@media only screen and (max-width:960px) {
+    .hero-banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .ask-us-form {
+        display: none;
+    }
 
+    .dimytech-header-logo {
+        display: flex;
+        justify-content: center;
+    
+      }
 
-/* Tech Stack Section */
+    .program-img {
+        width: 400px;
+    }
+}
+
+/* TECH STACK SECTION */
 
 .tech-stack {
-    grid-template-areas: section-a;
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
+    }
 
-.section-title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    .section-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-.tech-logos {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 50px;
-}
-.lang-logo {
-    width: 200px;
-}
+    .tech-logos {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 50px;
+    }
+    .lang-logo {
+        grid-template-areas: lang-logo;
+        width: 200px;
+    }
 
+    @media only screen and (max-width:960px) {
+        .tech-logos {
+            display: flex;
+            flex-wrap: wrap;
+        }
 
-/* Section Our Clients */
-.our-clients {
-    grid-template-areas: section-b;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+        .lang-logo {
+            width: 50px;
+        }
+    }
 
-.client-picture-lists {
-    display: flex;
-    justify-content: space-around;
-}
+/* CLIENTS SECTION */
 
-.client-pic {
-    width: 30%;
-}
+    .our-clients {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .client-picture-lists {
+        display: flex;
+        justify-content: space-around;
+    }
 
+    .client-pic {
+        width: 30%;
+    }
 
-/* career opportunity section */
+    .white-text {
+        color: #fff;
+    }
 
-.career-opportunity {
-    grid-template-areas: section-c;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+    @media only screen and (max-width:960px) {
+        .our-clients {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
 
-.career-table {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+        .client-picture-lists {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .client-pic {
+            width: 300px;
+        }
+    }
 
-table.minimalistBlack {
-    border: 3px solid #000000;
-    width: 100%;
-    text-align: left;
-    border-collapse: collapse;
-    background-color: #fff;
-  }
-  table.minimalistBlack td, table.minimalistBlack th {
-    border: 1px solid #000000;
-    padding: 5px 4px;
-  }
-  table.minimalistBlack tbody td {
-    font-size: 20px;
-  }
-  table.minimalistBlack thead {
-    background: #CFCFCF;
-    background: -moz-linear-gradient(top, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
-    background: -webkit-linear-gradient(top, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
-    background: linear-gradient(to bottom, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
-    border-bottom: 3px solid #000000;
-  }
-  table.minimalistBlack thead th {
-    font-size: 30px;
-    font-weight: bold;
-    color: #000000;
-    text-align: left;
-  }
- 
-.white-text {
-    color: #fff;
-}
+    /* CAREER SECTION */
 
-.background-white {
-    background-color: #fff;
-}
+    .career-opportunity {
+        grid-template-areas: section-c;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .career-table {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-footer {
-    grid-template-areas: footer;
-}
+    table.minimalistBlack {
+        border: 3px solid #000000;
+        width: 100%;
+        text-align: left;
+        border-collapse: collapse;
+        background-color: #fff;
+      }
+      table.minimalistBlack td, table.minimalistBlack th {
+        border: 1px solid #000000;
+        padding: 5px 4px;
+      }
+      table.minimalistBlack tbody td {
+        font-size: 20px;
+      }
+      table.minimalistBlack thead {
+        background: #CFCFCF;
+        background: -moz-linear-gradient(top, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+        background: -webkit-linear-gradient(top, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+        background: linear-gradient(to bottom, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+        border-bottom: 3px solid #000000;
+      }
+      table.minimalistBlack thead th {
+        font-size: 30px;
+        font-weight: bold;
+        color: #000000;
+        text-align: left;
+      }
 
-iframe {
-    padding-top: 50px;
-}
+      @media only screen and (max-width:960px) {
+        .career-table {
+            display: none;
+        }
+
+        .footer-section {
+            padding: 50px;
+        }
+
+        .footer-section h3 {
+            font-size: 25px
+        }
+
+        .footer-section iframe {
+            width: 500px;
+        }
+
+        .
+    }

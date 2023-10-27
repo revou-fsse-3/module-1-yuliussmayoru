@@ -1,141 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Dimy Teknologi Indonesia</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-    <body class="container">
+<body class="container">
 
-        <!--- navigation bar -->
+    <!--- navigation bar--->
 
-        <nav class="topnav" id="dimyTopnav">
-            <img src="assets/img/Dimy New Logo 2021 Landscape-10.png" alt="Dimy Logo" class="dimy-logo">
-            <div class="navbarMenu">
-                <a href="#Home" class="home">Home</a>
-                <a href="#techStack" class="Tech">Tech</a>
-                <a href="#ourClients" class="ourClient">Our Client</a>
-                <a href="#careerOpportunity" class="carrerOpportunity">Career</a>
-                <button type="button" id="adminLogin" class="button-styling">Admin Login</button>
-            </div>
-        </nav>
+    <nav class="topnav" id="dimyTopnav">
+        <img src="assets/img/Dimy New Logo 2021 Landscape-10.png" alt="Dimy Logo" class="dimy-logo">
 
-        <!--- header -->
 
-        <header id="headerSection" class="hero-banner background">
+        <label for="ham_menu" class="ham-menu-bar">
+            <i class="fa fa-bars"></i> <!--- USING THIS CLASS IS MANDATORY --->
+        </label>
+
+        <input type="checkbox" id="hamMenu" autocomplete="off">
+        <ul>
+            <li><a href="#Home" class="home nav-menu">Home</a></li>
+            <li><a href="#techStack" class="Tech nav-menu">Tech</a></li>
+            <li><a href="#ourClients" class="ourClient nav-menu">Our Client</a></li>
+            <li> <a href="#careerOpportunity" class="carrerOpportunity nav-menu">Career</a></li>
+        </ul>
+    </nav>
+
+    <!--- header -->
+
+    <header id="headerSection" class="hero-banner background">
+        <div class="dimytech-header-logo">
             <img src="assets/img/logo6-07.png" alt="program logo" class="program-img">
-            <div class="ask-us-form">
-                <form id="contactForm" class="contact-form" onsubmit="return validateForm()">
-                    <h3 class="contact-us-title">Contact Us!</h3>
-                    <label for="fname" class="label-name">Your name:</label>
-                    <input type="text" id="fname" name="fname" placeholder="name" class="input-form">
-                    <label for="femail" class="label-name">E-mail:</label>
-                    <input type="text" id="femail" name="femail" placeholder="email" class="input-form">
-                    <label for="fdropdown" class="label-name">Gender</label>
-                    <select id="dropdown-gender" class="input-form">
-                        <option value="">Select</option>
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                        <option value="apache">AH-64 Apache</option>
-                    </select>
-                    <label for="ftextbox" class="label-name">Message:</label>
-                    <textarea id="ftextbox" name="ftextbox" placeholder="Write something!" class="input-form"></textarea>
-                    <input type="submit" id="formsubmit" value="Kirim" class="input-form">
-                </form>
-            </div>
-        </header>
+        </div>
+        
+        <div class="ask-us-form">
+            <form id="contactForm" class="contact-form" onsubmit="return validateForm()">
+                <h3 class="contact-us-title">Contact Us!</h3>
+                <label for="fname" class="label-name">Your name:</label>
+                <input type="text" id="fname" name="fname" placeholder="name" class="input-form">
+                <label for="femail" class="label-name">E-mail:</label>
+                <input type="text" id="femail" name="femail" placeholder="email" class="input-form">
+                <label for="fdropdown" class="label-name">Gender</label>
+                <select id="dropdown-gender" class="input-form">
+                    <option value="">Select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="apache">AH-64 Apache</option>
+                </select>
+                <label for="ftextbox" class="label-name">Message:</label>
+                <textarea id="ftextbox" name="ftextbox" placeholder="Write something!" class="input-form"></textarea>
+                <input type="submit" id="formsubmit" value="Kirim" class="input-form">
+            </form>
+        </div>
+    </header>
 
-        <!--- tech stack section --->
+    <!--- tech stack section --->
 
-        <section class="tech-stack" id="techStack">
-            <div class="section-title">
-                <h3 id="tech-stack-title">Our Tech Stack!</h3><br>
-                <p id="tech-stack-info">Below is the list of tech we used in Dimy!</p>
-            </div>
-            <div class="tech-logos">
-                <img src="assets/img/php.png" alt="php" class="lang-logo">
-                <img src="assets/img/python.png" alt="pyhton" class="lang-logo">
-                <img src="assets/img/java-script.png" alt="javascript" class="lang-logo">
-                <img src="assets/img/physics.png" alt="react" class="lang-logo">
-                <img src="assets/img/web.png" alt="asp" class="lang-logo">
-            </div>
-        </section>
+    <section class="tech-stack" id="techStack">
+        <div class="section-title">
+            <h3 id="tech-stack-title">Our Tech Stack!</h3><br>
+            <p id="tech-stack-info">Below is the list of tech we used in Dimy!</p>
+        </div>
+        <div class="tech-logos">
+            <img src="assets/img/php.png" alt="php" class="lang-logo">
+            <img src="assets/img/python.png" alt="pyhton" class="lang-logo">
+            <img src="assets/img/java-script.png" alt="javascript" class="lang-logo">
+            <img src="assets/img/physics.png" alt="react" class="lang-logo">
+            <img src="assets/img/web.png" alt="asp" class="lang-logo">
+        </div>
+    </section>
 
-        <!--- our clients section --->
+    <!--- our clients section --->
 
-        <section class="our-clients" id="ourClients">
-            <div class="section-title white-text">
-                <h3 id="our-clients-title">Our Clients!</h3>
-                <p>here is some list of our clients!</p>
-            </div>
-            <div class="client-picture-lists">
-                <img src="assets/img/jayadi.png" alt="jayadi" class="client-pic">
-                <img src="assets/img/pertiwi.png" alt="pertiwi" class="client-pic">
-                <img src="assets/img/pos.png" alt="pos" class="client-pic">
-            </div>
-        </section>
-
-        <!--- career opportunity  section --->
-
-        <section class="career-opportunity" id="careerOpportunity">
-            <div class="section-title">
-                <h3 id="carrer-opportunity-title">Join Us!</h3>
-                <p>currently we are looking for talent to join us!</p>
-            </div>
-            <div class="career-table">
-                <table class="minimalistBlack">
-                    <tbody>
-                        <thead>
-                            <tr>
-                                <th>No</th>
-                                <th>Job</th>
-                                <th>Description</th>
-                                <th>Requirement</th>
-                            </tr>
-                        </thead>
-                        <tr>
-                            <td>1</td>
-                            <td>Laravel + React Programmer</td>
-                            <td>ability to build a web base system using react as front end, and laravel as it's backend</td>
-                            <td>3+ years experience in field</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Vue Programmer</td>
-                            <td>ability to build a frontend using Nuxt.js</td>
-                            <td>1+ years experience in field</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Project Manager</td>
-                            <td>ability to Manage a Project</td>
-                            <td>3+ years experience in field</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>System Analyst</td>
-                            <td>know how to create a document and analize a project</td>
-                            <td>3+ years experience in field</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <p class="background-white">if you think you are, fulfill the requirements, you may contact us at : dimy.teknologi@gmail.com</p>
-            </div>            
-        </section>
-
-        <!--- footer section --->
-
-        <footer>
-            <div class="footer-section white-text">
-                <h3 id="footer-title">where can you find us?</h3>
-                <p>Address : Jl. Capricorn No.27A, Gumuruh, Kec. Batununggal, Kota Bandung, Jawa Barat 40275</p>
-                <p>Phone number: +6285222803000</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15842.4406758838!2d107.6378218!3d-6.9371072!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e97f9613b259%3A0x60b36fbf005d6450!2sPT%20Dimy%20Teknologi%20Indonesia!5e0!3m2!1sen!2sid!4v1697541083955!5m2!1sen!2sid" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </footer>
-
-    </body>
+    <section class="our-clients" id="ourClients">
+        <div class="section-title white-text">
+            <h3 id="our-clients-title">Our Clients!</h3>
+            <p>here is some list of our clients!</p>
+        </div>
+        <div class="client-picture-lists">
+            <img src="assets/img/jayadi.png" alt="jayadi" class="client-pic">
+            <img src="assets/img/pertiwi.png" alt="pertiwi" class="client-pic">
+            <img src="assets/img/pos.png" alt="pos" class="client-pic">
+        </div>
+    </section>
     
-<script src="assets/js/script.js"></script>
+     <!--- career opportunity  section --->
 
+     <section class="career-opportunity" id="careerOpportunity">
+        <div class="section-title">
+            <h3 id="carrer-opportunity-title">Join Us!</h3>
+            <p>currently we are looking for talent to join us!</p>
+        </div>
+        <div class="career-table">
+            <table class="minimalistBlack">
+                <tbody>
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Job</th>
+                            <th>Description</th>
+                            <th>Requirement</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>1</td>
+                        <td>Laravel + React Programmer</td>
+                        <td>ability to build a web base system using react as front end, and laravel as it's backend</td>
+                        <td>3+ years experience in field</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Vue Programmer</td>
+                        <td>ability to build a frontend using Nuxt.js</td>
+                        <td>1+ years experience in field</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Project Manager</td>
+                        <td>ability to Manage a Project</td>
+                        <td>3+ years experience in field</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>System Analyst</td>
+                        <td>know how to create a document and analize a project</td>
+                        <td>3+ years experience in field</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="background-white">if you think you are, fulfill the requirements, you may contact us at : dimy.teknologi@gmail.com</p>
+        </div>            
+    </section>
+    
+    <!--- footer section --->
+
+    <footer>
+        <div class="footer-section white-text">
+            <h3 id="footer-title">where can you find us?</h3>
+            <p>Address : Jl. Capricorn No.27A, Gumuruh, Kec. Batununggal, Kota Bandung, Jawa Barat 40275</p>
+            <p>Phone number: +6285222803000</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15842.4406758838!2d107.6378218!3d-6.9371072!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e97f9613b259%3A0x60b36fbf005d6450!2sPT%20Dimy%20Teknologi%20Indonesia!5e0!3m2!1sen!2sid!4v1697541083955!5m2!1sen!2sid" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+
+</body>
 </html>
