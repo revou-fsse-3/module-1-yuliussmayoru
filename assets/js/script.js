@@ -27,11 +27,17 @@ const validateForm = ()=> {
     return true; // Allow form submission
 }
 
+var x = document.getElementById("mobileNavbar");
 function showMobileNav() {
-    var x = document.getElementById("mobileNavbar");
-    if (x.style.display === "none" || x.style.display === "") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
+    if (window.innerWidth <= 960) {
+        if (x.style.display === "none" || x.style.display === "") {
+            x.style.display = "flex";
+        } else {
+            x.style.display = "none";
+        }
     }
-  }
+}
+
+x.addEventListener('click',()=> {
+    x.style.display = "none";
+})

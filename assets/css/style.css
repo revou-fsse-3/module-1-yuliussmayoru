@@ -80,6 +80,7 @@ nav ul li a:hover {
 .ham-menu-bar {
     display: none;
     font-size: 30px;
+    z-index: 100;
 }
 
 .hamburger-button-style {
@@ -89,6 +90,10 @@ nav ul li a:hover {
     background-color: white;
     font-size: 40px;
     cursor: pointer;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
 }
 
 .hamburger-button-style:hover {
@@ -114,7 +119,39 @@ nav ul li a:hover {
     }
     
     .mobile-navbar-menu {
-        background-color: white;
+        background-color: rgba(222, 220, 220, 0.7);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .mobile-navbar-menu > a {
+        font-size: 2rem;
+        color: #000000;
+        position: relative;
+    }
+
+    .mobile-navbar-menu > a::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 1rem;
+        width: 100%;
+        height: 100%;
+        background-color: #0E2A47;
+        transform: scaleX(0);
+        transition: all 1s ease-in-out;
+        content: '';
+        z-index: -1;
+    }
+
+    .mobile-navbar-menu > a:hover::after {
+        transform: scaleX(1);
     }
   }
 
