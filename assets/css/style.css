@@ -41,7 +41,15 @@ p {
     padding: 10px;
     position: sticky;
     top: 0;
+    transition: background-color 0.4s ease-in-out;
 }
+
+.topnav.scrolled {
+    background-color: #0E2A47;
+    opacity: 0.98;
+}
+
+
 
 .dimy-logo {
     width: 200px;
@@ -62,10 +70,11 @@ nav ul li {
 }
 
 nav ul li a {
-    text-decoration: none;
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
     padding: 18px;
     color: black;
-    transition: .5s all ease;
+    transition: .5s all ease color 0.4s ease-in-out;
 }
 
 nav ul li a:hover {
